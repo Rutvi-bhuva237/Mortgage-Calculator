@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    
+</head>
+<body>
+    <script src="script.js"></script>
+        <div  class="container">
+                <div class="Calculator">
+                    <div class="inside-calc">
+                        <div class="calc-heading">
+                            <p class="heading">Mortgage Calculator</p>
+                            <a href=""onclick="clearContent()">Clear All</a>
+                        </div>
+                        <p>Mortgage Amount</p> 
+                        <div class="main">
+                            <div class="mortage-sign">₹</div>
+                            <div><input type="text" name="" id="amount" class="Mortage-amount"></div>   
+                            
+                        </div> 
+                        
+                        <div class="mortage-heading">
+                            <p>Mortgage Term</p>
+                            <p>Interest Rate</p>
+                        </div>
+                        <div class="mortage-box">
+                            <div class="main">
+                                <div><input type="text" name="" id="loanTerm" class="years"></div>
+                                    <div class="years-sign">Years</div>
+                            </div>
+                            <div class="main">
+                                <div><input type="text" class="years" id="interestRate"></div>
+                                    <div class="years-sign">%</div>
+                            
+                            </div>
+                        </div>
+                        <p>Mortgage Type</p>
+                            <div class="Repayment">
+                                <label for="101">
+                                <input type="radio" name="mortgageType" id="Payment" value="Repayment">Repayment
+                                </label>
+                            </div>
+                            <div class="Repayment">
+                                <label for="102">
+                                <input type="radio" name="mortgageType" id="Interest" value="interest-only">Interest Only
+                                </label>
+                            </div>
+                         <button class="repay-button " onclick="calculateMortgage()" id="calculatebutton" >Calculate Repayment</button>
+                         <button style="display: none;" id="interest-button" class="repay-button" onclick="calculateInterest()">Calculate Interest</button>
+                         
+                        
+                    </div>
+                </div>    
+                <div class="result">
+                    <div class="inside-calc">
+                        <p>Your Results</p>
+                        <p>Your results are shown below based on the information you provided.To adjust the results, edit the form and click"calculate repayments" again.</p>
+                        <div class="monthly-payment " id="PaymentSection" >
+                            <p>Your Monthly Payment</p>
+                            <h1 id="monthlyPayment">₹0.00</h1>
+                            <hr>
+                            <p>Total  you'll repay over the term</p>
+                            <h2 id="totalRepayment">₹0.00</h2>
+                        </div>
+                        <div style="display: none;" class="monthly-payment " id="resultSection" >
+                            <p>Total interest you'll pay over the loan term 
+                            <h1 id="monthly-Payment"> ₹0.00</h1>
+                            <hr>
+                           
+                        </div>
+
+                        
+                    </div>
+
+
+                </div>
+        </div>
+   
+</body>
+</html>

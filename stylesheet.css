@@ -1,0 +1,132 @@
+body{
+    background-color: #cef0fa;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.Calculator{
+    height: 490px;
+    width: 450px;
+    background-color: #f1faee;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+.result{
+    height: 490px;
+    width: 400px;
+    background-color:#2b2d42;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+    margin-left: -50px;
+
+}
+.inside-calc{
+    margin: 20px;
+    overflow:hidden;
+  
+}
+.heading{
+    font-size: 20px;
+    font-weight: 800;
+}
+.calc-heading{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.Mortage-amount{
+    height: 40px;
+    width: 300px;
+    background-color: white;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: none;
+}
+.mortage-sign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#cef0fa;
+    width: 12%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    
+}
+.mortage-heading{
+    display: flex;
+    gap: 112px;
+}
+.mortage-box{
+    display: flex;
+    gap: 40px;
+}
+
+.years{
+    height: 40px;
+    width: 80px;
+    background-color:white;
+    border: none;
+   
+}
+.years-sign{
+    height: 40px;
+    width: 80px;
+    background-color: #cef0fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Mortage-type{
+    display: flex;
+}
+
+.Repayment{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 70%;
+    background-color: white;
+    border-top: 2px solid grey; 
+     border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.repay-button{
+    background-color: rgb(183, 183, 30);
+    height: 40px;
+    border-radius: 50px ;
+}
+.main{
+    display: flex;
+   
+}
+.monthly-payment{
+    height: 200px;
+    width: 90% ;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    border-top: 3px solid yellow ;
+}
+
+.interest-only{
+    background-color: rgb(183, 183, 30);
+    height: 40px;
+    border-radius: 50px ;
+}
+
+
+
+.results-interest{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
