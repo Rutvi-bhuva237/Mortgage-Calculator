@@ -1,4 +1,30 @@
+function changecolor(){ 
+
+
+
+    let radios = document.querySelectorAll('input[name="mortgageType"]'); 
+
+    radios.forEach(radio => {
+        let parentDiv = radio.closest(".Repayment"); 
+
+        if (radio.checked) {
+            parentDiv.style.border = "2px solid yellow"; 
+            parentDiv.style.backgroundColor = "lightyellow";
+        } else {
+            parentDiv.style.border = "2px solid grey"; 
+            parentDiv.style.backgroundColor = "white";
+        }
+    });
+
+}
+
+
+
 function calculateMortgage() {
+
+    
+
+
     let loanAmount = parseFloat(document.getElementById("amount").value);
     
 

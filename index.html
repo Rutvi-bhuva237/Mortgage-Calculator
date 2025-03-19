@@ -39,14 +39,14 @@
                             </div>
                         </div>
                         <p>Mortgage Type</p>
-                            <div class="Repayment">
+                            <div class="Repayment" id="payment-color">
                                 <label for="101">
-                                <input type="radio" name="mortgageType" id="Payment" value="Repayment">Repayment
+                                <input type="radio" name="mortgageType" id="Payment" onclick="changecolor()"  value="Repayment">Repayment
                                 </label>
                             </div>
-                            <div class="Repayment">
+                            <div class="Repayment" >
                                 <label for="102">
-                                <input type="radio" name="mortgageType" id="Interest" value="interest-only">Interest Only
+                                <input type="radio" name="mortgageType" id="Interest" onclick="changecolor()" value="interest-only">Interest Only
                                 </label>
                             </div>
                          <button class="repay-button " onclick="calculateMortgage()" id="calculatebutton" >Calculate Repayment</button>
