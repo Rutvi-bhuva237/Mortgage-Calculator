@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
 </head>
 <body>
@@ -44,13 +45,14 @@
                                 <input type="radio" name="mortgageType" id="Payment" onclick="changecolor()"  value="Repayment"> Repayment
                                 </label>
                             </div>
-                            <div class="Repayment" >
+                            <div class="Repayment   repayment" >
                                 <label for="Interest">
                                 <input type="radio" name="mortgageType" id="Interest" onclick="changecolor()" value="interest-only"> Interest Only
                                 </label>
                             </div>
-                            <br>
-                         <button class="repay-button " onclick="calculateMortgage()" id="calculatebutton" >Calculate Repayment</button>
+                            
+                         <button class="repay-button " onclick="calculateMortgage()" id="calculatebutton" >
+                            <i class="fa-solid fa-calculator"></i> Calculate Repayment</button>
                          <button style="display: none;" id="interest-button" class="repay-button" onclick="calculateInterest()">Calculate Interest</button>
                          <br>
                         
@@ -62,14 +64,14 @@
                         <p class="result-para">Your results are shown below based on the information you provided.To adjust the results, edit the form and click"calculate repayments"or "Calculate Interest" again.</p>
                         <div class="monthly-payment " id="PaymentSection" >
                             <p class="payment-color">Your Monthly Repayments</p>
-                            <p id="monthlyPayment">₹0.00</p>
+                            <p id="monthlyPayment">₹ 0.00</p>
                             <hr>   
                             <p class="payment-color">Total  you'll repay over the term</p>
-                            <p id="totalRepayment">₹0.00</p>
+                            <p id="totalRepayment">₹ 0.00</p>
                         </div>
                         <div style="display: none;" class="monthly-payment " id="resultSection" >
                             <p>Total interest you'll pay in one month</p>
-                            <p id="monthly-Payment"> ₹0.00</p>
+                            <p id="monthly-Payment"> ₹ 0.00</p>
                             <hr>
                            
                         </div>

@@ -139,6 +139,12 @@ input{
     width:65%;
     border-radius: 50px ;
     font-weight: 700;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
 }
 .main{
     display: flex;
@@ -193,5 +199,9 @@ input{
     padding: 10px;
     background-color: black;
     color: white;
+}
+
+.repayment{
+    margin-bottom: 20px;
 }
 
