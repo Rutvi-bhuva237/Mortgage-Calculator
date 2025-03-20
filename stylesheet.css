@@ -55,7 +55,7 @@ body {
 
 .Mortage-amount{
     height: 40px;
-    width: 300px;
+    width: 280px;
     border: 2px solid grey;
     border-left: none;
     border-top-right-radius: 5px;
@@ -80,16 +80,18 @@ body {
 }
 .mortage-heading{
     display: flex;
-    gap: 89px;
+    gap: 78px;
 }
 .mortage-box{
     display: flex;
     gap: 20px;
 }
-
+input{
+    padding-left: 20px;
+}
 .years{
     height: 40px;
-    width: 80px;
+    width: 60px;
     background-color:white;
     border: 2px solid grey;
     border-right: none;
@@ -140,6 +142,7 @@ body {
 }
 .main{
     display: flex;
+    
    
 }
 
