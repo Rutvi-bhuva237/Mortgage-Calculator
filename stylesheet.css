@@ -1,14 +1,25 @@
-body{
-    background-color: #cef0fa;
+
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color:  #cef0fa;
 }
+    
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
+ .mortage-heading{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(87, 83, 83);
+}
 .Calculator{
-    height: 490px;
+    height: 520px;
     width: 450px;
     background-color: #ffffff;
     border-top-left-radius: 20px;
@@ -16,8 +27,8 @@ body{
     
 }
 .result{
-    height: 490px;
-    width: 400px;
+    height: 520px;
+    width: 450px;
     background-color:#2b2d42;
     color: white;
     border-top-right-radius: 20px;
@@ -27,18 +38,19 @@ body{
 
 }
 .inside-calc{
-    margin: 20px;
+    margin: 30px;
     overflow:hidden;
   
 }
 .heading{
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
+    color: black;
 }
 .calc-heading{
     display: flex;
     align-items: center;
-    gap: 110px;
+    gap: 100px;
 }
 
 .Mortage-amount{
@@ -46,8 +58,9 @@ body{
     width: 300px;
     border: 2px solid grey;
     border-left: none;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
     
     
     
@@ -60,8 +73,8 @@ body{
     width: 12%;
     border: 2px solid grey;
     border-right: none;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     
     
 }
@@ -80,8 +93,8 @@ body{
     background-color:white;
     border: 2px solid grey;
     border-right: none;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 
    
 }
@@ -94,8 +107,8 @@ body{
     justify-content: center;
     border: 2px solid grey;
     border-left: none;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 
 }
 .Mortage-type{
@@ -106,28 +119,54 @@ body{
     display: flex;
     align-items: center;
     height: 40px;
-    width: 87%;
+    width: 90%;
     background-color: white;
     border: 2px solid grey; 
-     border-radius: 2px;
+    border-radius: 5px;
     margin-bottom: 10px;
-    font-weight: 900;
+    font-weight: 700;
+    
+}
+
+#Payment{
+    font-weight: 500;
 }
 .repay-button{
     background-color: rgb(183, 183, 30);
     height: 40px;
     width:65%;
     border-radius: 50px ;
+    font-weight: 700;
 }
 .main{
     display: flex;
    
 }
+
+.heading-result{
+    color: white;
+    font-weight:400;
+}
+
+.result-para{
+    color: rgb(166, 159, 159);
+    font-weight: lighter;
+}
+
+.payment-color{
+    
+    color: rgb(166, 159, 159);
+    
+}
+
+
 .monthly-payment{
     height: 200px;
     width: 90% ;
     background-color: black;
-    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
     border-radius: 5px;
     border-top: 3px solid yellow ;
 }
@@ -137,7 +176,14 @@ body{
     height: 40px;
     border-radius: 50px ;
 }
+#monthlyPayment{
+    color: yellow;
+    font-size:30px;
+}  
 
+#totalRepayment{
+    font-size: 20px ;
+}
 
 
 .results-interest{
