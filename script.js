@@ -65,6 +65,9 @@ function calculateMortgage() {
 
 function calculateInterest(){
 
+
+    
+
     let loanAmount = parseFloat(document.getElementById("amount").value);
     let interestRate = parseFloat(document.getElementById("interestRate").value);
     let years = parseFloat(document.getElementById("loanTerm").value);
@@ -117,7 +120,7 @@ function clearContent() {
   
 document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("Interest").addEventListener("change", function() {
-            document.getElementById("interest-button").style.display = "inline-block";
+            document.getElementById("interest-button").style.display = "flex";
             document.getElementById("calculatebutton").style.display = "none";
             document.getElementById("resultSection").style.display = "inline-block"
             document.getElementById("PaymentSection").style.display = "none" ;
@@ -127,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         document.getElementById("Payment").addEventListener("change", function() {
             document.getElementById("interest-button").style.display = "none";
-            document.getElementById("calculatebutton").style.display = "inline-block";
+            document.getElementById("calculatebutton").style.display = "flex";
             document.getElementById("PaymentSection").style.display = "inline-block"
             document.getElementById("resultSection").style.display = "none" ;
         });
