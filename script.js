@@ -67,12 +67,35 @@ function calculateInterest(){
 
     let loanAmount = parseFloat(document.getElementById("amount").value);
     let interestRate = parseFloat(document.getElementById("interestRate").value);
+    let years = parseFloat(document.getElementById("loanTerm").value);
     let monthlyInterestRate = (interestRate / 100) / 12;
-    let interestPayment = loanAmount * monthlyInterestRate;
-    let Payment = interestPayment.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+    let totalMonths = years * 12;
+    
+      
+
+    let monthlyPayment = loanAmount * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, totalMonths)) / 
+                         (Math.pow(1 + monthlyInterestRate, totalMonths) - 1)
+                         
+    
+    let totalPaid = monthlyPayment * totalMonths;
+
+    
+    let totalInterestPaid = totalPaid - loanAmount;
+
+    
+    let formattedMonthlyPayment = monthlyPayment.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+    let formattedTotalPaid = totalInterestPaid.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+
+
+
+    
    
-   
-    document.getElementById("monthly-Payment").innerText =  Payment;
+    document.getElementById("monthly-Payment").innerText = formattedMonthlyPayment;
+    document.getElementById("Total-Payment").innerText = formattedTotalPaid;
+
+
+
+
     
 }
 

@@ -194,6 +194,12 @@ input{
     font-size: 20px ;
 }
 
+#monthly-Payment{
+    color: yellow;
+    font-size:30px;
+}  
+
+
 
 .results-interest{
     padding: 10px;
